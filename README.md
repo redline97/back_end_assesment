@@ -22,7 +22,7 @@ docker run --name marketing_campaign_db -e POSTGRES_USER=postgres -e POSTGRES_PA
 used the @Slf4j annotation from lombok in order to log all the methods, or created html templates for email contents. As for mailchimp, based on their documentations
 and some guidelines i read on scientific papers i could have also implemented interfaces and builder methods that they exposed, but stuck with a more simplistic approach 
 by creating a campaing for each user to be subscribed and for that campaign i notified all the used with a dummy mail template, but i tried to keep the project as simple as possible.
-Also used Liquibase for a faster approach to table creation with some basic data inside. Hoping to be to your liking :)
+Also used Liquibase for a faster approach to table creation with some basic data inside. My only doubts reside on the UserSegment logic, because i didn't do any CRUD operations for that table only the api that was mentioned in the email, followed by some insert statement SQL-wise. Hoping to be to your liking :)
 
 ## Project Overview
 This project involves creating a RESTful API using Spring Boot and PostgreSQL for managing marketing campaigns and user segments. It also includes integration with Mailchimp for sending emails to specific user segments.
